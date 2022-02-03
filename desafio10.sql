@@ -10,4 +10,4 @@ ON US.user_id = U.user_id
 ON U.plan_id = P.plan_id
 WHERE P.plan_name = "gratuito" OR P.plan_name = "pessoal"
 GROUP BY nome
-ORDER BY US.user_id DESC;
+ORDER BY reproducoes DESC, nome;
