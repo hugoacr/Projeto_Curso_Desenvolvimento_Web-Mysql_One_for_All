@@ -5,4 +5,4 @@ FROM Song AS S
 	INNER JOIN User_Song AS US
 ON S.song_id = US.reproduction_history
 GROUP BY cancao
-ORDER BY reproducoes DESC LIMIT 2;
+ORDER BY US.user_id DESC LIMIT 2;
